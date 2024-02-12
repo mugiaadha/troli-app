@@ -55,6 +55,10 @@ class TroliService
 
     public function applyPromo($request)
     {
+        if (!in_array($request->promo_code, ['FA111', 'FA222', 'FA333', 'FA444'])) {
+            return "<script>window.alert('kode promo tidak ditemukan');</script>";
+        }
+
         $troliData = $this->troliDataRepository->getAll();
         $troliData->each(function ($troli) use ($request) {
             $troli->update(['kode_promo' => $request->promo_code]);
@@ -87,7 +91,7 @@ class TroliService
                     break;
 
                 default:
-                    return redirect()->back()->with('message', 'Kode Promo Tidak Ditemukan');
+                    return "<script>window.alert('kode promo tidak ditemukan');</script>";
                     break;
             }
         });
