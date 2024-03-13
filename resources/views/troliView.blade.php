@@ -12,7 +12,7 @@
                 <table class="table">
                     <thead>
                         <tr align="center">
-                            <th scope="col">PRODUK</th>
+                            <th scope="col">PRODUKA</th>
                             <th scope="col">PILIHAN HARGA</th>
                             <th scope="col">KUANTITAS</th>
                             <th scope="col">SUBTOTAL</th>
