@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <br>
-                <h1>Troli Appa</h1>
+                <h1>Troli App</h1>
                 <br>
             </div>
             <div class="col-12">
